@@ -1,10 +1,12 @@
-/* Font definition for Roboto */
+/* Font definition for Worksans */
 @font-face {
   font-family: WorkSans;
   src: url("../Resources/Fonts/WorkSans-Regular.woff") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
+/* Font definition for Noticia */
+
 @font-face {
   font-family: Noticia;
   src: url("../Resources/Fonts/NoticiaText-Bold.woff") format("truetype");
@@ -27,8 +29,10 @@
 }
 button:hover,
 a:hover {
+  /* Generalize property for all hyperlinks and buttons */
   cursor: pointer;
 }
+/* Header banner properties */
 .header-upper {
   background-color: #c8f169;
   color: #2a6b2c;
@@ -48,6 +52,7 @@ a:hover {
   font-weight: bold;
 }
 .header-upper .x {
+  /* cross button */
   width: 2%;
   color: #043f2e;
   background-color: #c8f169;
@@ -55,10 +60,12 @@ a:hover {
 }
 header,
 main {
+  /* background and font property for header and main */
   background-color: #043f2e;
   font-family: WorkSans;
 }
 .navbar {
+  /* Navigation bar properties */
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -99,12 +106,14 @@ main {
   padding: 10px 25px;
 }
 .main {
+  /* main div properties*/
   height: 668px;
   padding: 50px;
   position: relative;
 }
 .main-content {
   display: float;
+  /* using display float */
   width: 100%;
   z-index: 3;
 }
@@ -115,6 +124,7 @@ main {
   height: calc(100% - 60px);
 }
 .headings > div {
+  /* properties for all divs in headings */
   font-family: Noticia;
   background-color: #c8f169;
   color: #043f2e;
@@ -142,6 +152,7 @@ main {
 }
 
 .graph {
+  /* div for graph in right */
   position: absolute;
   right: 50px;
   top: 50px;
@@ -173,6 +184,7 @@ main {
   align-items: center;
 }
 .demo {
+  /* demo button */
   background-color: #043f2e;
   border-radius: 3px;
   color: white;
@@ -180,6 +192,7 @@ main {
   padding: 10px 20px;
 }
 .try1 {
+  /* try button */
   background-color: white;
   border: 1px white solid;
   border-radius: 3px;
@@ -188,6 +201,7 @@ main {
   margin-right: 20px;
 }
 .main-image {
+  /*Image div properties*/
   margin-top: 180px;
 }
 .main-image > img {
