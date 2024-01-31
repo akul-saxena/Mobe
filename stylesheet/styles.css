@@ -1,0 +1,195 @@
+/* Font definition for Roboto */
+@font-face {
+  font-family: WorkSans;
+  src: url("../Resources/Fonts/WorkSans-Regular.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Noticia;
+  src: url("../Resources/Fonts/NoticiaText-Bold.woff") format("truetype");
+}
+* {
+  /* Assigning whole page margin and padding 0 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* container properties defined to be used in html webpage */
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 15px 15px;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    padding: 0 25px;
+  }
+}
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+.header-upper {
+  background-color: #c8f169;
+  color: #2a6b2c;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.header-upper-left {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  background-color: #c8f169;
+}
+.header-upper-left .learnmore {
+  color: #043f2e;
+  background-color: #c8f169;
+  font-weight: bold;
+}
+.header-upper .x {
+  width: 2%;
+  color: #043f2e;
+  background-color: #c8f169;
+  text-decoration: none;
+}
+header,
+main {
+  background-color: #043f2e;
+  font-family: WorkSans;
+}
+.navbar {
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo {
+  width: 15%;
+}
+.navigation {
+  width: 65%;
+}
+.navigation a {
+  text-decoration: none;
+  color: #043f2e;
+  font-size: 14px;
+  margin: 10px;
+}
+.login {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.signin {
+  background-color: rgb(255, 255, 255);
+  border: 1px #043f2e solid;
+  border-radius: 3px;
+  color: #043f2e;
+  padding: 10px 20px;
+}
+.try {
+  background-color: #043f2e;
+  border: 1px #043f2e solid;
+  border-radius: 3px;
+  color: #c8f169;
+  padding: 10px 25px;
+}
+.main {
+  height: 668px;
+  padding: 50px;
+  position: relative;
+}
+.main-content {
+  display: float;
+  width: 100%;
+  z-index: 3;
+}
+.headings {
+  display: float;
+  position: absolute;
+  width: calc(100% - 100px);
+  height: calc(100% - 60px);
+}
+.headings > div {
+  font-family: Noticia;
+  background-color: #c8f169;
+  color: #043f2e;
+  width: fit-content;
+  padding: 15px;
+  font-size: 80px;
+}
+.main-heading1 {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.main-heading2 {
+  transform: translate(61.2%);
+  border-bottom-left-radius: 20px;
+  border-bottom: 30px #043f2e solid;
+  border-left: 30px #043f2e solid;
+}
+.main-heading3 {
+  transform: translate(0, -30%);
+  float: right;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.graph {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  padding: 30px 25px;
+  width: fit-content;
+  color: #c8f169;
+  background-color: #2a6b2c;
+  border-radius: 10px;
+}
+.graphheading {
+  font-size: 50px;
+}
+.graphcontent {
+  margin-bottom: 15px;
+}
+.content {
+  position: absolute;
+  right: 75px;
+  bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  color: rgb(255, 255, 255);
+  height: 150px;
+}
+.content-buttons {
+  display: flex;
+  align-items: center;
+}
+.demo {
+  background-color: #043f2e;
+  border-radius: 3px;
+  color: white;
+  border: 1px white solid;
+  padding: 10px 20px;
+}
+.try1 {
+  background-color: white;
+  border: 1px white solid;
+  border-radius: 3px;
+  color: #043f2e;
+  padding: 10px 25px;
+  margin-right: 20px;
+}
+.main-image {
+  margin-top: 180px;
+}
+.main-image > img {
+  width: 640px;
+}
